@@ -10,6 +10,7 @@ public class HourForecast {
 
     public void setTemperature(double temperature) {
         this.temperature = temperature;
+
+
     }
 }
-

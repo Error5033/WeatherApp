@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_message"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -16,5 +17,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.349" />
+
+    TextView tv = findViewById(R.id.tv_message);
+    String text = getString(R.string.str_tv_message, hf.getTemperature());
+    tv.setText(text);
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
